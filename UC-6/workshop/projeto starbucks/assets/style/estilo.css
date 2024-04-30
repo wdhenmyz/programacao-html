@@ -116,7 +116,6 @@ a:hover {
     height: 100px;
 }
     
-
 #historias-starbucks {
     width: 160px;
     height: 80px;
@@ -124,15 +123,10 @@ a:hover {
 }
 
 
-
-
-
 #banner {
-    border: 0px solid #D4E9E2;
     width: 1440px;
     height: 420px;
     background-color: #1E3932;
-    padding: px;
     margin-bottom: 32px;
 }
 
@@ -153,6 +147,7 @@ a:hover {
     display: flex;
     flex-direction: row;
 }
+
 #coluna2 {
     display: flex;
     flex-direction: column;
@@ -204,8 +199,8 @@ a:hover {
 #noticias{
     display: flex;
     flex-direction: row;
-
 }
+
 #coluna6 {
     display: flex;
     flex-direction: column;
@@ -247,7 +242,6 @@ h3{
     color: rgb(136, 136, 136);
     display:flex;
     flex-direction: column;
-    
 }
 
 #R-1{
@@ -257,7 +251,6 @@ h3{
     height: 200px;
     
 }
-
 
 #R-2{
     display: flex;
@@ -275,4 +268,96 @@ h3{
     display: flex;
     flex-direction: column;
     width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items:center
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 700px;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        padding: 1px;
+        margin-bottom: 32px;
+    }
+
+    #nav-esquerda {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+    }
+
+    #nav-direita {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 300px;
+        height: 100px;
+    }
+
+    #banner {
+        width: 700px;
+        height: 360px;
+        background-color: #1E3932;
+        margin-bottom: 26px;
+    }
+
+    #imagem-banner{
+        width: 700px;
+        height: 360px;
+    }
+
+    #destaque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height:190px;
+        background-color: #D4E9E2;
+        padding: 1px;
+        margin-bottom: 32px;
+    }
+
+    #cafe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #coisas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #noticias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #rodape{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 750px;
+        height: 700px;
+        justify-content: center;
+    }
+
+    
+    
 }
