@@ -1,0 +1,54 @@
+#dica {
+    color: black;
+}
+
+#cartoes {
+    align-items: center;
+    justify-content: center;
+}
+
+.h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: 6000;
+    
+}
+
+
+
+
+#cartao-9 {
+   
+}
+
+#cartao-10 {
+    
+}
+
+
+
+#pedido {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+#fazer {
+    border-color: orange;
+    color: black;
+}
+
+#baixe{
+    border-color: transparent;
+    color: gray;
+}
+
+#rodape {
+    background-color: rgb(255, 187, 62);
+}
+
+#baixar {
+    background-color: white;
+    border-color: transparent;
+    color: black;
+}

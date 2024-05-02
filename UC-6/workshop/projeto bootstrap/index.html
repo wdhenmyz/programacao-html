@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../projeto starbucks/assets/style/reset.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/mcdonalds-logo-footer-bg-white.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">lançamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">família</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">méqui pra você</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">mcdia feliz</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="button">
+                <img src="./images/celular.png" alt="">
+                <button id="baixe" class="btn btn-outline-success" type="button">baixe o app</button>
+              </form>
+            <form class="d-flex" role="button" id="pedido">
+                <img src="./images/pedido.png" alt="">
+                <button id="fazer" class="btn btn-outline-success" type="button">peça seu méqui</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/banner mcdonalds.png" class="d-block w-100" alt="...">
+          <div id="dica" class="carousel-caption d-none d-md-block">
+            <h1>Pega essa dica</h1>
+            <p>Peça seu Méqui pelo McDelivery ou Peça e Retire.</p>
+            <button type="button" class="btn btn-light">clique aqui!</button>
+          </div>
+      </div>
+    </div>
+
+    <div id="cartoes" class="row col-11 me-auto row-cols-1 row-cols-md-2 g-4">
+        <div id="cartao-1" class="col">
+          <div class="card">
+            <img src="./images/cartão 1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NOSSO CRISPY TEM O MOLHO</h5>
+              <p class="card-text">Essa família tem o molho e eu posso provar! Tem o Elite, Legend, Deluxe e Melt & Bacon: tem um Crispy pra cada gosto.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cartao-2" class="col">
+          <div class="card">
+            <img src="./images/cartão 2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dois sabores da Sprite X já chegaram no Méqui.</h5>
+              <p class="card-text">Qual time você é? Maçã Verde ou sabor Tangerina com Morango?</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cartao-3" class="col">
+          <div class="card">
+            <img src="./images/cartão 3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">É mais que satisfatório. É Chocrocantemente</h5>
+              <p class="card-text">O McFlurry Chocrocante com Diamante Negro chegou trazendo toda aquela cremosidade da massa, pedacinhos de Diamante Negro euma calda que endurece e vira casquinha.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cartao-4" class="col">
+          <div class="card">
+            <img src="./images/cartão 4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Se liga quem tá na área: Big Tasty turbo Queijo!</h5>
+              <p class="card-text">O Big Tasty que é uma verdadeira extravagância de queijolência.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cartao-5" class="col">
+          <div class="card">
+            <img src="./images/cartão 5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Os livrinhos da Turma da Mônica chegaram no Méqui.</h5>
+              <p class="card-text">São 5 opções pra família toda se divertir com o McLanche Feliz.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cartao-6" class="col">
+          <div class="card">
+            <img src="./images/cartão 6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Meu Méqui</h5>
+              <p class="card-text">Chegou o programa de fidelidade do Méqui! A cada R$1 gasto, você ganha 100 pontos. É Méqui que vira ponto, que vira mais Méqui!  </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cartao-7" class="col">
+          <div class="card">
+            <img src="./images/cartão 7.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Atenção! Se olhar pro McFlurry não vai ter mais jeito, vai ter que provar.</h5>
+              <p class="card-text">O McFlurry Kit Kat com o Leite em Pó mais querido do Brasil chegou com tudo no Méqui pra matar a sua fome geladinha.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cartao-8" class="col">
+          <div class="card">
+            <img src="./images/cartão 8.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Menos fila, mais Méqui</h5>
+              <p class="card-text">Se você não gosta de fila, então pega essa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cartao-9" class="col">
+          <div class="card">
+            <img src="./images/cartão 9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Já add o Méqui Zap?</h5>
+              <p class="card-text">Aquele contato do whatsapp que nunca te deixa no vácuo e sempre manda promoção boa é o nosso.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cartao-10" class="col">
+          <div class="card">
+            <img src="./images/cartão 10.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Méqui da Madruga</h5>
+              <p class="card-text">Quer saber quais os restaurantes têm Drive 24H pra matar sua fome da madrugada?</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <div class="row row-cols-1 me-auto row-cols-md-3 g-4">
+        <div id="cartao-11" class="col">
+          <div class="card h-100">
+            <img src="./images/cartão 11.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Que tal um #MéquiNoSofá?</h5>
+              <p class="card-text">Faça agora seu pedido e receba em casa pelo delivery.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cartao-12" class="col">
+          <div class="card h-100">
+            <img src="./images/cartão 12.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Confira as medidas que o Méqui adotou!</h5>
+              <p class="card-text">Juntos, vamos sair dessa ainda mais fortes, preparados e unidos.</p>
+            </div>
+          </div>
+        </div>
+        <div id="cartao-13" class="col">
+          <div class="card h-100">
+            <img src="./images/cartão 13.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Encontre o Méqui mais próximo de vc</h5>
+              <p class="card-text">Deixamos ainda mais fácil! Ative sua geolocalização e mostraremos o restaurante McDonald's mais próximo de você.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer id="rodape">
+      <h1>Já baixou o nosso App?</h1>
+      <h7>Peça seu delivery, veja o menu, baixe stickers, peça e retire, encontre os restaurantes mais próximos, tenha todos os cupons e muito mais</h7>
+      <button id="baixar" class="btn btn-outline-success" type="button">baixe agora</button>
+    </footer>
+      
+
+
+    
+
+</body>
+</html>
