@@ -1,22 +1,49 @@
-// importa o express para o meu projeto
 const express = require('express')
-// cria uma instacia do express
-const app = express();
-// '/' é o indereço base do servidor
-// req - recebe a requisição
-// res - envia uma resposta
-// send é uma propriedade que envia alguma coisa
-app.get('/teste', (req, res) => {
-    res.send('Hello World! este é o meu primeiro servidor!')
+const app = express()
+
+const usuarios = [
+    {id: 1 ,nome: "joão", idade: 15},
+    {id: 2 ,nome: "maria", idade: 23},
+    {id: 3 ,nome: "jose", idade: 29}
+]
+
+//rota normal
+app.get('/usuarios', function (req, res) {
+  res.send(usuarios)
 })
 
+// parametros de rota
+app.get('/usuarios/:id', function (req, res) {
+    // console.log(req.params.id);
+    const resultado = usuarios.find( (usuario) => {
+        return usuario.id === Number(req.params.id) 
+        // ou return usuario.id == req.params.id
+    })
+    res.send(resultado)
+  })
+
+// parametros de consulta
+app.get('/usuarios-parametro', (req, res) => {
+    // console.log(req.query);
+    const { nome } = req.query;
+    let resultado = usuarios;
+
+    if (nome) {
+        resultado = usuarios.find( () => {
+            return usuarios.nome === nome
+        })
+    }
+
+    res.send(resultado)
+})
+
+
+
+
+
+
+
+
 app.listen(3000, () => {
-    console.log('servidor: http://localhost:3000/');
-});
-
-
-
-
-
-
-
+    console.log('servidor: http://localhost:3000');
+ })
