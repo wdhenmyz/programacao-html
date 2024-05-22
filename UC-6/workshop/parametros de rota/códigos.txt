@@ -1,0 +1,9 @@
+npm install -D nodemon
+nodemon ./src/index.js
+npm run dev
+
+insomnia
+
+
+
+

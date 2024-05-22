@@ -1,0 +1,16 @@
+npm init -----faz o projeto manualmente
+npm init -y---pula as etapas para criar o projeto imediatamente
+npm install/i express
+.gitignore ---- ignora um arquivo específico quando for carregar para o github
+git init
+
+node .\src\index.js
+
+npm install -D nodemon
+"dev": nodemon ./src/index.js
+npm run dev
+
+insomnia
+
+http://localhost:300
+

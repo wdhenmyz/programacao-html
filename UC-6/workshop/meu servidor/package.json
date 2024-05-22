@@ -1,0 +1,19 @@
+{
+  "name": "proj-starbucks",
+  "version": "1.0.0",
+  "description": "este projeto é o meu primeiro servidor desenvolvido nesse curso senac rn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "js",
+    "express"
+  ],
+  "author": "Wesllen D. B. Ferreira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
