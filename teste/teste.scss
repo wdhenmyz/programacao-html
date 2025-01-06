@@ -5,7 +5,8 @@
     align-content: center;
 }
 
-@mixin size {
+@mixin shape($bg: none) {
+    background-color: $bg;
     height: 400px;
     width: 400px;
 }
@@ -27,12 +28,10 @@ body{
     align-items: center;
 
     form {
-        background-color: green;
-        @include size
+        @include shape($bg: purple)
     }
 
     section {
-        background-color: pink;
-        @include size
+        @include shape($bg: green)
     }
 }

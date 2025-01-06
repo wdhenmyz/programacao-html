@@ -18,12 +18,12 @@ body {
   align-items: center;
 }
 #teste form {
-  background-color: green;
+  background-color: purple;
   height: 400px;
   width: 400px;
 }
 #teste section {
-  background-color: pink;
+  background-color: green;
   height: 400px;
   width: 400px;
 }
