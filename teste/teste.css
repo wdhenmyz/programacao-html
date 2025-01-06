@@ -7,7 +7,7 @@ body {
   flex-wrap: wrap;
 }
 
-div {
+#teste {
   background-color: blue;
   height: 500px;
   width: 1000px;
@@ -17,12 +17,12 @@ div {
   justify-content: space-evenly;
   align-items: center;
 }
-div form {
+#teste form {
   background-color: green;
   height: 400px;
   width: 400px;
 }
-div section {
+#teste section {
   background-color: pink;
   height: 400px;
   width: 400px;
