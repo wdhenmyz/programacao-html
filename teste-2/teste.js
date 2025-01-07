@@ -8,4 +8,6 @@ const style = css`
     background: blue;
 `
 
-app.classList.add(style)
+if (app) {
+  app.classList.add(style)
+}
