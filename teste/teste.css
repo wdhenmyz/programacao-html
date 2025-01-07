@@ -18,7 +18,7 @@ body {
   align-items: center;
 }
 #teste form {
-  background-color: purple;
+  background-color: black;
   height: 400px;
   width: 400px;
 }
@@ -26,6 +26,4 @@ body {
   background-color: green;
   height: 400px;
   width: 400px;
-}
-
-/*# sourceMappingURL=teste.css.map */
+}/*# sourceMappingURL=teste.css.map */

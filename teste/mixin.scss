@@ -1,0 +1,12 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin shape($bg: none) {
+    background-color: $bg;
+    height: 400px;
+    width: 400px;
+}

@@ -1,15 +1,4 @@
-@mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-@mixin shape($bg: none) {
-    background-color: $bg;
-    height: 400px;
-    width: 400px;
-}
+@use 'mixin' as *;
 
 body{
     background-color: red;
@@ -28,7 +17,7 @@ body{
     align-items: center;
 
     form {
-        @include shape($bg: purple)
+        @include shape($bg: black)
     }
 
     section {
