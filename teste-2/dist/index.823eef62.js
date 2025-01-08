@@ -597,13 +597,13 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"9mtmm":[function(require,module,exports,__globalThis) {
 var _css = require("@emotion/css");
-const app = document.getElementById('root');
 const style = (0, _css.css)`
     height: 100px;
     width: 100px;
     color: red;
     background: blue;
 `;
+const app = document.getElementById('root');
 if (app) app.classList.add(style);
 
 },{"@emotion/css":"gyRZs"}],"gyRZs":[function(require,module,exports,__globalThis) {

@@ -1,7 +1,7 @@
 5558
 54/workspaces/programacao-html/teste-2/package-lock.json1736335414949302236 0
 52/workspaces/programacao-html/teste-2/dist/index.html1736335579781309877 0
-63/workspaces/programacao-html/teste-2/dist/index.823eef62.js.map1736335664157313788 0
+63/workspaces/programacao-html/teste-2/dist/index.823eef62.js.map1736342599325634827 0
 73/workspaces/programacao-html/teste-2/node_modules/node-addon-api/index.js1736335408949301957 0
 75/workspaces/programacao-html/teste-2/node_modules/node-addon-api/napi-inl.h1736335408701301946 0
 84/workspaces/programacao-html/teste-2/node_modules/node-addon-api/tools/check-napi.js1736335408861301953 0
@@ -471,7 +471,7 @@
 80/workspaces/programacao-html/teste-2/node_modules/@parcel/cache/lib/LMDBCache.js1736335409221301970 0
 90/workspaces/programacao-html/teste-2/node_modules/posthtml/node_modules/entities/readme.md1736335410433302026 0
 85/workspaces/programacao-html/teste-2/node_modules/@parcel/compressor-raw/package.json1736335409697301992 0
-45/workspaces/programacao-html/teste-2/teste.js1736335664133313787 0
+45/workspaces/programacao-html/teste-2/teste.js1736342569261635138 0
 84/workspaces/programacao-html/teste-2/node_modules/@parcel/packager-html/package.json1736335409513301984 0
 98/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/features/css-color-function.js1736335410781302042 0
 100/workspaces/programacao-html/teste-2/node_modules/htmlnano/lib/modules/collapseBooleanAttributes.mjs1736335410725302040 0
@@ -1192,7 +1192,7 @@
 82/workspaces/programacao-html/teste-2/node_modules/postcss-value-parser/lib/walk.js1736335408809301951 0
 90/workspaces/programacao-html/teste-2/node_modules/posthtml/node_modules/domhandler/LICENSE1736335409877302000 0
 97/workspaces/programacao-html/teste-2/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js1736335410749302041 0
-59/workspaces/programacao-html/teste-2/dist/index.823eef62.js1736335664153313788 0
+59/workspaces/programacao-html/teste-2/dist/index.823eef62.js1736342599321634827 0
 77/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/agents.js1736335409153301967 0
 101/workspaces/programacao-html/teste-2/node_modules/@parcel/optimizer-htmlnano/lib/HTMLNanoOptimizer.js1736335409597301987 0
 94/workspaces/programacao-html/teste-2/node_modules/node-gyp-build-optional-packages/optional.js1736335408609301942 0
@@ -1622,7 +1622,7 @@
 56/workspaces/programacao-html/teste-2/node_modules/@lezer1736335407541301892 1
 94/workspaces/programacao-html/teste-2/node_modules/@babel/types/lib/definitions/experimental.js1736335327401298177 0
 98/workspaces/programacao-html/teste-2/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs1736335327113298164 0
-36/workspaces/programacao-html/teste-21736335579761309876 1
+36/workspaces/programacao-html/teste-21736342548453635354 1
 81/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/regions/UZ.js1736335411621302081 0
 78/workspaces/programacao-html/teste-2/node_modules/domutils/lib/legacy.d.ts.map1736335409301301974 0
 76/workspaces/programacao-html/teste-2/node_modules/react-refresh/package.json1736335408901301955 0
@@ -4945,7 +4945,7 @@
 81/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/regions/IR.js1736335411313302067 0
 81/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/regions/TJ.js1736335411601302080 0
 81/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/regions/GI.js1736335411213302062 0
-41/workspaces/programacao-html/teste-2/dist1736335664157313788 1
+41/workspaces/programacao-html/teste-2/dist1736342599325634827 1
 81/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/regions/SN.js1736335411565302079 0
 81/workspaces/programacao-html/teste-2/node_modules/caniuse-lite/data/regions/RS.js1736335411545302078 0
 73/workspaces/programacao-html/teste-2/node_modules/resolve/test/subdirs.js1736335327393298177 0
