@@ -10,13 +10,7 @@ const style = css`
 const app = document.getElementById('root')
 
 function color() {
-  app.onclick = () => {
     app.classList.add(style)
-  }
 }
 
 color()
-
-if (app) {
-  
-}
