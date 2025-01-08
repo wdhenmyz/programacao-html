@@ -1,0 +1,4 @@
+npx sv create {nome do app}
+cd {nome do app}
+npm install
+npm run dev
