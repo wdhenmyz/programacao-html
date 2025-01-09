@@ -8,6 +8,9 @@ const style = css`
     align-items: center;
     color: red;
     background: green;
+    &:hover {
+        background: pink;
+    }
 `
 
 const div = document.getElementById('div')
