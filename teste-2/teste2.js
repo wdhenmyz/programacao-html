@@ -1,19 +1,18 @@
-import { css } from '@emotion/css'
+import { css } from 'https://cdn.skypack.dev/@emotion/css';
 
-const color = 'white'
+const click = css`
+    height: 100px;
+    width: 100px;
+    color: blue;
+    background: red;
+`
 
-render(
-  <div
-    className={css`
-      padding: 32px;
-      background-color: hotpink;
-      font-size: 24px;
-      border-radius: 4px;
-      &:hover {
-        color: ${color};
-      }
-    `}
-  >
-    Hover to change color.
-  </div>
-)
+const app = document.getElementById('root')
+
+function color() {
+    app.onclick = () => {
+        app.classList.toggle(click)
+    }
+}
+
+color()
