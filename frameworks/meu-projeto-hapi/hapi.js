@@ -1,5 +1,6 @@
 'use strict';
 const Hapi = require('@hapi/hapi');
+const Inert = require('@hapi/inert');
 
 // configurando o servidor hapi
 const server = new Hapi.server({
@@ -46,6 +47,9 @@ const init = async () => {
     });
 
     await server.register(require('./plugin'));
+
+    await server.register(Inert);
+    await server.register(require('./local'));
 
     // iniciando o servidor
     await server.start();
