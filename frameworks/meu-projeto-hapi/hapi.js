@@ -22,8 +22,8 @@ const init = async () => {
     server.route({
         method: 'GET',
         path: '/{name}',
-        handler: function (request, reply) {
-            reply('Olá, ' + encodeURIComponent(request.params.name) + '!');
+        handler: function (request, h) {
+            return('Olá, ' + encodeURIComponent(request.params.name) + '!');
         }
     });
     
