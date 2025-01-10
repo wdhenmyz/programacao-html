@@ -12,7 +12,7 @@ const init = async () => {
 
     // ajustando as rotas
     server.route({
-        method: 'GET',
+        method: '*',
         path: '/',
         handler: function () {
             return ('projeto hapi!');
@@ -43,7 +43,9 @@ const init = async () => {
 
             return (`hello, ${name}, have a nice day!`);
         }
-    })
+    });
+
+    await server.register(require('./plugin'));
 
     // iniciando o servidor
     await server.start();
