@@ -14,8 +14,16 @@ const init = async () => {
     server.route({
         method: 'GET',
         path: '/',
-        handler: () =>{
-            return 'projeto hapi!';
+        handler: function () {
+            return ('projeto hapi!');
+        }
+    })
+
+    server.route({
+        method: ['PUT','POST'],
+        path: '/',
+        handler: function (request, h) {
+            return('Requisição recebida com sucesso!');
         }
     })
 
@@ -26,7 +34,16 @@ const init = async () => {
             return('Olá, ' + encodeURIComponent(request.params.name) + '!');
         }
     });
-    
+
+    server.route({
+        method: 'GET',
+        path: '/hello/{name?}',
+        handler: function (request, h) {
+            const name = request.params.name ? request.params.name : 'stranger';
+
+            return (`hello, ${name}, have a nice day!`);
+        }
+    })
 
     // iniciando o servidor
     await server.start();
