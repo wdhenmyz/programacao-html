@@ -1,7 +1,7 @@
 
 
 exports.plugin = {
-    name: 'meu-plugin',
+    name: 'meu-plugin2',
     version: '1.0.0',
     register: async function (server, options) {
         server.route({

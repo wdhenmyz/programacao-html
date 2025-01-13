@@ -1,4 +1,4 @@
 git status
-    add .
-    commit -m "mensagem"
-    push
+git add .
+git commit -m "mensagem"
+git push
