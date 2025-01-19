@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = [
   {
+    watch: true,
     entry: './src/index.js',
     output: {
       filename: 'main.js',
@@ -10,6 +11,7 @@ module.exports = [
   },
 
   {
+    watch: true,
     entry: './src/teste.js',
     output: {
       filename: 'teste.js',
@@ -18,6 +20,7 @@ module.exports = [
   },
 
   {
+    watch: true,
     entry: './src/teste2.js',
     output: {
       filename: 'teste2.js',
@@ -26,6 +29,7 @@ module.exports = [
   },
 
   {
+    watch: true,
     entry: './src/teste3.js',
     output: {
       filename: 'teste3.js',
@@ -34,6 +38,7 @@ module.exports = [
   },
 
   {
+    watch: true,
     entry: './src/teste4.js',
     output: {
       filename: 'teste4.js',
