@@ -1,26 +1,20 @@
-function cadastrar(a, b, c, d) {
-    let usuario = a;
-    let senha = b;
-    let senha2 = c;
-    let idade = d;
-
+function cadastrar(usuario, senha, senha2, idade) {
     if (idade < 18) {
-        return console.log("menor de idade");
+        console.log("Menor de idade");
+        return;
     }
     if (senha !== senha2) {
-        return console.log("senhas não conferem");
+        console.log("Senhas não conferem");
+        return;
     }
     if (senha.length < 6) {
-        return console.log("senha muito curta");
+        console.log("Senha muito curta");
+        return;
     }
 
-    let cadastro = {
-        usuario: usuario,
-        senha: senha,
-        idade: idade
-    }
+    const cadastro = { usuario, senha, idade };
 
-    return console.log(`usuario ${cadastro.usuario} cadastrado com sucesso, bem vindo`);
+    console.log(`Usuário ${cadastro.usuario} cadastrado com sucesso, bem-vindo`);
 }
 
 cadastrar("joao", "123456", "123456", 18);
