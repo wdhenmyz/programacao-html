@@ -15,23 +15,36 @@ const db = new sqlite3.Database('./data.db', sqlite3.OPEN_READWRITE, (err) => {
 });
 
 // Rota para criar tabela
-app.post('/create-table', (req, res) => {
-    const sql = `CREATE TABLE IF NOT EXISTS users (
+app.post('/create-table/:tabela', (req, res) => {
+    const { tabela } = req.params;
+    const { parametros } = req.body;
+
+    // Validação básica para evitar injeção de SQL
+    if (!tabela || !Array.isArray(parametros) || parametros.length === 0) {
+        return res.status(400).json({ error: 'Nome da tabela ou parâmetros inválidos.' });
+    }
+
+    // Garantir que os nomes são válidos
+    const sanitizedTable = tabela.replace(/[^a-zA-Z0-9_]/g, '');
+    const sanitizedParams = parametros.map(param => param.replace(/[^a-zA-Z0-9_]/g, ''));
+
+    // Montar SQL dinamicamente
+    const columns = sanitizedParams.map(param => `${param} TEXT`).join(', ');
+    const sql = `CREATE TABLE IF NOT EXISTS ${sanitizedTable} (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nome TEXT,
-        sobrenome TEXT,
-        usuario TEXT,
-        senha TEXT,
-        email TEXT
+        ${columns}
     )`;
+
+    // Executar SQL
     db.run(sql, (err) => {
         if (err) {
             console.error('Erro ao criar tabela:', err.message);
             return res.status(500).json({ error: 'Erro ao criar tabela.' });
         }
-        res.json({ message: 'Tabela criada com sucesso.' });
+        res.json({ message: `Tabela '${sanitizedTable}' criada com sucesso.` });
     });
 });
+
 
 // Rota para deletar tabela
 app.delete('/drop-table', (req, res) => {
