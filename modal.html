@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-open-modal>open</button>
+
+    <dialog data-modal>
+        <div>tis is a modal</div>
+        <button data-close-modal>close</button>
+    </dialog>
+
+    <script>
+        const openB = document.querySelector("[data-open-modal]")
+        const closeB = document.querySelector("[data-close-modal]")
+        const modal = document.querySelector("[data-modal]")
+
+        openB.addEventListener("click", () => {
+            modal.showModal()
+        })
+
+        closeB.addEventListener("click", () => {
+            modal.close()
+        })
+    </script>
+</body>
+</html>
